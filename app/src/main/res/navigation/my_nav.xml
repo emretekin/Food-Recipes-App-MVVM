@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/recipesFragment"
-        android:name="com.emretekin.foodrecipesappmvvm.RecipesFragment"
+        android:name="com.emretekin.foodrecipesappmvvm.ui.fragments.RecipesFragment"
         android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
-        android:name="com.emretekin.foodrecipesappmvvm.FavoriteRecipesFragment"
+        android:name="com.emretekin.foodrecipesappmvvm.ui.fragments.FavoriteRecipesFragment"
         android:label="Favorite"
         tools:layout="@layout/fragment_favorite_recipes" />
 </navigation>

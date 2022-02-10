@@ -1,4 +1,4 @@
-package com.emretekin.foodrecipesappmvvm
+package com.emretekin.foodrecipesappmvvm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.emretekin.foodrecipesappmvvm.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +19,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val navController = findNavController(R.id.navHostFragment)
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.recipesFragment, R.id.favoriteRecipesFragment))
+        val appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.recipesFragment,
+            R.id.favoriteRecipesFragment
+        ))
 
         bottomNavigationView.setupWithNavController(navController)
         setupActionBarWithNavController(navController, appBarConfiguration)
