@@ -8,8 +8,4 @@ class Repository @Inject constructor(private val remoteDataSource: RemoteDataSou
 
     val remote = remoteDataSource
 
-    fun getRecipes() {
-
-    }
-
 }
